@@ -24,55 +24,46 @@ public class Extension {
     }
 
     public StringBuilder one() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("Hello, world!");
 
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
-
-
         // ...AND THIS LINE
 
         return sb;
     }
 
     public StringBuilder two() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("Hello, world!");
 
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, use an appropriate StringBuilder method to reverse it
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
-
-
+        sb.reverse();
         // ...AND THIS LINE
 
         return sb;
     }
 
     public StringBuilder three() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("Hello, world!");
 
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, remove the comma.
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
-
-
+        sb.deleteCharAt(sb.indexOf(","));
         // ...AND THIS LINE
 
         return sb;
     }
 
     public StringBuilder four() {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder("Hello, world!");
 
         // 1. Using the sb variable above, add "Hello, world!" to the StringBuilder
         // 2. After adding the message, replace the word "world" with the word "Java"
         // WRITE YOUR CODE BETWEEN THIS LINE...
-
-
-
+        sb.replace(sb.indexOf("world"), sb.indexOf("world") + "world".length(), "Java");
         // ...AND THIS LINE
 
         return sb;
